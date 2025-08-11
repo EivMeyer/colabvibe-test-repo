@@ -1,31 +1,31 @@
-/**
- * Utility functions for the ColabVibe test application
- */
+// Utility functions for ColabVibe Test App
 
 function getCurrentTime() {
-    return new Date().toLocaleString();
+    return new Date().toLocaleTimeString('en-US', {
+        hour12: true,
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit'
+    });
 }
 
 function getRandomNumber() {
-    return Math.floor(Math.random() * 1000);
+    return Math.floor(Math.random() * 10000) + 1;
 }
 
-function formatMessage(message) {
-    return `[${getCurrentTime()}] ${message}`;
+function getRandomEmoji() {
+    const emojis = ['🚀', '⭐', '🌟', '💫', '✨', '🎯', '🎉', '🔥', '💡', '🌈'];
+    return emojis[Math.floor(Math.random() * emojis.length)];
 }
 
-function calculateSum(a, b) {
-    return a + b;
-}
-
-function isEven(number) {
-    return number % 2 === 0;
+function getRandomColor() {
+    const colors = ['#ff6b6b', '#4ecdc4', '#45b7d1', '#96ceb4', '#feca57', '#ff9ff3', '#54a0ff'];
+    return colors[Math.floor(Math.random() * colors.length)];
 }
 
 module.exports = {
     getCurrentTime,
     getRandomNumber,
-    formatMessage,
-    calculateSum,
-    isEven
+    getRandomEmoji,
+    getRandomColor
 };
