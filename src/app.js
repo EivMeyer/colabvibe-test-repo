@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
     res.send(`
         <html>
             <head>
-                <title>🏢 ColabVibe Live Preview Demo</title>
+                <title>⚽ ColabVibe Live Preview Demo</title>
                 <link rel='stylesheet' href='/styles.css'>
                 <style>
                     body { 
@@ -81,7 +81,7 @@ app.get('/', (req, res) => {
             </head>
             <body>
                 <div class='container'>
-                    <h1>🏢 ColabVibe Live Preview</h1>
+                    <h1>⚽ ColabVibe Live Preview</h1>
                     <p style='text-align: center; font-size: 1.2em; opacity: 0.9;'>
                         This is a live preview of your collaborative development environment\!
                     </p>
@@ -128,7 +128,7 @@ app.get('/', (req, res) => {
                             <span class='emoji-btn' data-emoji='⭐'>⭐</span>
                             <span class='emoji-btn' data-emoji='🎉'>🎉</span>
                             <span class='emoji-btn' data-emoji='😂'>😂</span>
-                            <span class='emoji-btn' data-emoji='🏢'>🏢</span>
+                            <span class='emoji-btn' data-emoji='⚽'>⚽</span>
                             <span class='emoji-btn' data-emoji='💯'>💯</span>
                         </div>
                         
@@ -145,7 +145,7 @@ app.get('/', (req, res) => {
                             <div id='jumpingBall' class='jumping-ball'></div>
                         </div>
                         <div class='ball-controls'>
-                            <button id='jumpBtn'>🏢 Make it Jump!</button>
+                            <button id='jumpBtn'>⚽ Make it Jump!</button>
                             <button id='changeColorBtn'>🎨 Change Color</button>
                             <button id='changeSizeBtn'>📏 Change Size</button>
                         </div>
@@ -451,7 +451,7 @@ app.get('/api/canvas', (req, res) => {
 
 // Start server
 server.listen(PORT, '0.0.0.0', () => {
-    console.log(`🏢 ColabVibe Test Server running on http://localhost:${PORT}`);
+    console.log(`⚽ ColabVibe Test Server running on http://localhost:${PORT}`);
     console.log(`🎨 Real-time Drawing Canvas enabled!`);
     console.log(`📊 API Status: http://localhost:${PORT}/api/status`);
     console.log(`💚 Health Check: http://localhost:${PORT}/api/health`);
